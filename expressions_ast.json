@@ -1,0 +1,68 @@
+[
+  {
+    "line_no": 1,
+    "expr": "3 * 4 + 10 / 2",
+    "ast_json": {
+      "type": "BinOp",
+      "op": "+",
+      "left": {
+        "type": "BinOp",
+        "op": "*",
+        "left": {
+          "type": "Number",
+          "value": 3
+        },
+        "right": {
+          "type": "Number",
+          "value": 4
+        }
+      },
+      "right": {
+        "type": "BinOp",
+        "op": "/",
+        "left": {
+          "type": "Number",
+          "value": 10
+        },
+        "right": {
+          "type": "Number",
+          "value": 2
+        }
+      }
+    },
+    "sexpr": "(+ (* 3 4) (/ 10 2))"
+  },
+  {
+    "line_no": 2,
+    "expr": "(12 + 217) * 3 - 621",
+    "ast_json": {
+      "type": "BinOp",
+      "op": "-",
+      "left": {
+        "type": "BinOp",
+        "op": "*",
+        "left": {
+          "type": "BinOp",
+          "op": "+",
+          "left": {
+            "type": "Number",
+            "value": 12
+          },
+          "right": {
+            "type": "Number",
+            "value": 217
+          }
+        },
+        "right": {
+          "type": "Number",
+          "value": 3
+        }
+      },
+      "right": {
+        "type": "Number",
+        "value": 621
+      }
+    },
+    "sexpr": "(- (* (+ 12 217) 3) 621)"
+  }
+]
