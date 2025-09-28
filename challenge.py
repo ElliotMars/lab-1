@@ -86,7 +86,5 @@ for line in lines:
     expr = transformer.transform(tree)  # transform manually to AST
     print(expr)
 
-
-
 # Add(Multi(Num(3), Num(4)), Div(Num(10), Num(2)))
 # Minus(Multi(Par(Add(Num(12), Num(217))), Num(3)), Num(621))
